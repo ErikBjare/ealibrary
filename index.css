@@ -1,0 +1,45 @@
+p, h1, h3 {
+    color:#444;
+    font-family: sans-serif;
+}
+
+h1 {
+   
+}
+
+h3 {
+    font-size:90%;
+font-family: 'Indie Flower', cursive;
+    margin-top:40px;
+}
+
+
+p {
+   
+}
+
+header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width=100%;
+    height:200px;
+    
+}
+
+.box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    width:180px;
+    float:right;
+}
+
+#frontsearch {
+    width:100%;
+}
+
+.searchbox #booksearch{
+      float:right;
+}
