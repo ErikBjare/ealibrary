@@ -8,22 +8,22 @@ p, h1, h3 {
 h1, h3 {
     color:#fff;
     text-shadow: hsl(0, 100%, 53%) 1px 1px;
-    
 }
 
 h1 {
-   
+
 }
 
 h3 {
     font-size:150%;
 font-family: 'Indie Flower', cursive;
     margin-top:50px;
+  margin-left:10px;
 }
 
 
 p {
-   
+
 }
 
 header {
@@ -44,15 +44,19 @@ header {
     width:100%;
     float:right;
 }
-    
-.box #searchbox {
-        
+
+  .box #searchbox {
+
 }
-    
-.box #location {
-        
-        
+
+  .box #location {
+
+
 }
+
+
+  .box #registerbutton {
+    }
 
 .dropdown-menu li a:hover{
     background:hsl(0, 72%, 68%);
@@ -63,7 +67,7 @@ header {
     font-size:250%;
 }
 
-.dropdown-button {
+.button {
     width:300px;
     height:300px;
     font-size:250%;
@@ -80,12 +84,12 @@ header {
     width:400px;
     height:100px;
     font-size: 250%;
-} 
-    
+}
+
 }
 
 @media screen and (min-width:480px) {
-    
+
 p, h1, h3 {
     color:#444;
     font-family: sans-serif;
@@ -94,22 +98,22 @@ p, h1, h3 {
 h1, h3 {
     color:#fff;
     text-shadow: hsl(0, 100%, 53%) 1px 1px;
-    
 }
 
 h1 {
-   
+
 }
 
 h3 {
     font-size:150%;
 font-family: 'Indie Flower', cursive;
     margin-top:50px;
+    margin-left:10px;
 }
 
 
 p {
-   
+
 }
 
 header {
@@ -130,18 +134,48 @@ header {
     width:100%;
     float:right;
 }
-    
+
     .box #searchbox {
         display:flex;
         justify-content: center;
             float:right;
-  
+
     }
-    
+
     .box #location {
         display:flex;
         justify-content: center;
         width:500px;
+    }
+
+  #registerbutton {
+        position:fixed;
+        justify-content: center;
+        background:hsl(0, 72%, 58%);
+        float:right;
+    right:0;
+    bottom:0;
+    margin:20px;
+    border-radius:50%;
+    height:120px;
+    width:120px;
+    border:none;
+    z-index:1;
+    }
+
+  #registerbutton:hover {
+    background:hsl(0, 72%, 52%);
+  }
+
+
+  #registerbutton .buttontext {
+    font-size:90%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-shadow: hsl(0, 100%, 53%) 1px 1px;
+
     }
 
 .dropdown-menu li a:hover{
@@ -153,7 +187,7 @@ header {
     font-size:200%;
 }
 
-.dropdown-button {
+.button {
     width:300px;
     height:50px;
     font-size:200%;
@@ -169,7 +203,7 @@ header {
   width:90%;
     height:50px;
     font-size: 200%;
-} 
-   
+}
+
 }
 
