@@ -22,24 +22,27 @@
     </div>
    <div class="container" id="frontsearch">
          <div class="dropdown" class="col-sm-6">
-  <button class="button" type="button" data-toggle="dropdown">Choose your city
+  <button class="button" type="button" data-toggle="dropdown">Settings
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
-    <li><a href="#">Lund, SE</a></li>
-    <li><a href="#">New York, US</a></li>
-    <li><a href="#">Berlin, DE</a></li>
-      <li><a href="#">Enter a new city</a></li>
+    <li><input type="search" class="col-sm-6 settings"placeholder="City"/></li>
+    <li><input type="number" class="col-sm-6 settings" placeholder="Radius (km)"/></li>
+    <li><input type="text" class="col-sm-6 settings" placeholder="Author"/></li>
+    <li id="available"><input type="text" class="col-sm-6 settings"placeholder="Genre"/></li>
+      <li><p>
+        Available now
+        </p> <input type="checkbox" class="checkbox"/></li>
   </ul>
             </div>
-      <input type="search" class="col-sm-6" id="booksearch" placeholder="Search for books..." />
+      <input type="search" class="col-sm-6" id="booksearch" placeholder="Search for books..." autofocus  />
    </div>
 </div>
     <div class="main" ng-controller="MainController">
       <div class="container">
 
-        <h2>{{ title }}</h2>
+        <h3>{{ title }}</h3>
 
-<div ng-repeat="book in books" class="col-md-4">
+<div ng-repeat="book in books" class="col-md-4 col-sm-6 col-xs-12">
   <div class="thumbnail">
     <img ng-src="{{ book.cover }}">
     <p class="title">{{ book.name }}</p>
@@ -49,6 +52,9 @@
       <p class="bad" ng-click="plusOne($index)">+</p>
       <p class="good" ng-click="minusOne($index)">-</p>
       <p class="karma">{{ book.karma }}</p>
+    </div>
+    <div class="loan">
+      Ask for this book
     </div>
   </div>
 </div>

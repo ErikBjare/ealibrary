@@ -29,23 +29,46 @@ font-family: 'Indie Flower', cursive;
     justify-content: center;
     align-items: center;
     width=100%;
-    height:150px;
+    height:200px;
     background:hsl(0, 72%, 68%);
     font-size: 150%;
     color: #fff;
   text-align:center;
-}
-
-
-
-.dropdown-menu li a:hover{
-    background:hsl(0, 72%, 68%);
+  padding-top:30px;
 }
 
 .dropdown-menu {
   background:hsla(0, 0%, 98%,0.9);
     width:300px;
     font-size:200%;
+}
+
+.dropdown-menu p {
+color:#999;
+  margin-left:15px;
+  float:left;
+}
+
+.dropdown-menu #available {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings{
+  width:100%;
+  border:none;
+}
+
+.settings:focus{
+ outline:none;
+
+}
+
+.checkbox {
+  float:right;
+  height:40px;
+  width:35px;
 }
 
 .button {
@@ -75,10 +98,14 @@ font-family: 'Indie Flower', cursive;
     width:100%;
     display:flex;
     justify-content:flex-start;
+  position:fixed;
+  z-index: 1;
+  opacity: 0.9;
+  top:0;
 }
 
 #booksearch{
-  width:90%;
+  width:100%;
   border:none;
 }
 #booksearch:focus{
@@ -88,6 +115,11 @@ font-family: 'Indie Flower', cursive;
 
 .main {
  background-color: #f2f2f2 ;
+}
+
+.main h3 {
+  margin:20px;
+color: hsl(0, 72%, 68%);
 }
 
 .thumbnail {
@@ -191,7 +223,6 @@ height:300px;
 
 
   #registerbutton:hover {
-   color: hsl(0, 72%, 58%);
-   background: hsla(0, 90%, 90%,0.9);
+   background-color: #39D1B4 ;
    transition: background 500ms;
   }
