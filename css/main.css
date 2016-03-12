@@ -33,48 +33,17 @@ font-family: 'Indie Flower', cursive;
     background:hsl(0, 72%, 68%);
     font-size: 150%;
     color: #fff;
+  text-align:center;
 }
 
-  #registerbutton {
-        position:fixed;
-      display:flex;
-        justify-content: center;
-    align-items:center;
-        background:hsl(0, 72%, 58%);
-        float:right;
-    right:0;
-    bottom:0;
-    margin:20px;
-    border-radius:50%;
-    height:80px;
-    width:80px;
-    z-index:1;
-    }
 
-#registerbutton p {
-color:#fff;
-}
-
-  #registerbutton:hover {
-    background:hsl(0, 72%, 52%);
-  }
-
-
-  #registerbutton .buttontext {
-    font-size:90%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#fff;
-    text-shadow: hsl(0, 100%, 53%) 1px 1px;
-
-    }
 
 .dropdown-menu li a:hover{
     background:hsl(0, 72%, 68%);
 }
 
 .dropdown-menu {
+  background:hsla(0, 0%, 98%,0.9);
     width:300px;
     font-size:200%;
 }
@@ -199,3 +168,30 @@ height:300px;
    background: rgba(246, 90, 91, 0.25);
    transition: background 500ms;
 }
+
+  #registerbutton {
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    padding-top:25px;
+    background:hsl(0, 72%, 58%);
+    right:0;
+    bottom:0;
+    margin:20px;
+    border-radius:50%;
+    height:80px;
+    width:80px;
+    z-index:1;
+   color: #fff;
+   cursor: pointer;
+   font-size: 15px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+   transition: background 500ms;
+    }
+
+
+  #registerbutton:hover {
+   color: hsl(0, 72%, 58%);
+   background: hsla(0, 90%, 90%,0.9);
+   transition: background 500ms;
+  }
