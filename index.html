@@ -1,23 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>EAlibrary.com</title>
+<!doctype html>
+<html ng-app="app">
+  <head>
     <meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet"      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <title>EA Library</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--<script type="text/javascript" src=""></script>-->
+    <script type ="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>EA Library</h1>
-            <h3>The Effective Altruism Library</h3>
-
-        </header>
-        <div class="box" id="frontsearch">
-        <div class="box" id="location">
-         <div class="dropdown">
+  </head>
+ <body>
+    <div class="header">
+      <div class="container">
+        <h3>
+          The Effective Altruim Library
+        </h3>
+      </div>
+    </div>
+   <div class="container" id="frontsearch">
+         <div class="dropdown" class="col-sm-6">
   <button class="button" type="button" data-toggle="dropdown">Choose your city
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
@@ -26,26 +29,44 @@
     <li><a href="#">Berlin, DE</a></li>
       <li><a href="#">Enter a new city</a></li>
   </ul>
-</div>
-        </div>
-        <div class="box" id="searchbox">
-      <input type="search" id="booksearch" placeholder="Search for books..." />
-</div>
             </div>
-<ul>
-  <li>Om ej inloggad skall man ej kunna se vem som lånar ut böcker, bara vilka böcker som finns till utlånes.</li>
-  <li>Konto-info: mail, namn, telefonnummer</li>
-  <li>Möjlighet att välja hur man blir kontaktad av lånare: mail/sms</li>
-  <li>Karmasystem: +1 karma om man har bok till utlånes, +10 karma om man lånar ut en bok, +1 karma om man lånar en bok, +10 karma om man lämnar tillbaka en bok</li>
-  <ul>
-    <li>Obs: godtyckliga siffror.</li>
-  </ul>
-      </ul>
+      <input type="search" class="col-sm-6" id="booksearch" placeholder="Search for books..." />
+   </div>
+</div>
+    <div class="main" ng-controller="MainController">
+      <div class="container">
 
-                  <button class="button" id="registerbutton" type="button">
-<div class="buttontext">
-  Sign up</div>
+        <h2>{{ title }}</h2>
 
-            </button>
-    </body>
+<div ng-repeat="book in books" class="col-md-6">
+  <div class="thumbnail">
+    <img ng-src="{{ book.cover }}">
+    <p class="title">{{ book.name }}</p>
+    <p class="date">Puplished: {{ book.pubdate | date }}</p>
+    <p class="date">Available from: {{ book.available | date }}</p>
+    <div class="rating">
+      <p class="bad" ng-click="plusOne($index)">+</p>
+      <p class="good" ng-click="minusOne($index)">-</p>
+      <p class="karma">{{ book.karma }}</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+   <a href="#">
+   <div id="registerbutton">
+<p>
+  Sign Up!
+     </p>
+   </div>
+   </a>
+
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/MainController.js"></script>
+  </body>
 </html>
