@@ -173,7 +173,7 @@ height:300px;
     position:fixed;
     display:flex;
     justify-content: center;
-    padding-top:25px;
+    align-items:center;
     background:hsl(0, 72%, 58%);
     right:0;
     bottom:0;
