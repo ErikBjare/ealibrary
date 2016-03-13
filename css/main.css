@@ -139,10 +139,10 @@ border-top:1px solid #999;
 }
 
 .login {
-  max-width:70px;
+  max-width:100px;
 }
 
-#city {
+#city, #author {
   padding-left: 10px;
 }
 
@@ -171,14 +171,14 @@ height:300px;
 }
 
 .title,
-.date {
+.meta {
  color: #444;
  margin: 0;
  font-size: 18px;
    font-weight: 800;
 }
 
-.date {
+.meta {
    color: #a3a3a3 ;
    font-size: 14px;
    font-weight: 200;

@@ -26,19 +26,18 @@
   <button class="button" type="button" data-toggle="dropdown"><img src="img/settings.png" width=50px"><!--Image creator: http://www.bogdanrosu.com/--></img>
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
-    <li><input type="search" class="settings" placeholder="City"/></li>
     <li><input type="number" class="settings" placeholder="Radius (km)"/></li>
-    <li><input type="text" class="settings" placeholder="Author"/></li>
     <li id="available"><input type="text" class="settings"placeholder="Genre"/></li>
       <li><p>
         Available now
         </p> <input type="checkbox" class="checkbox"/></li>
-        <!--<li id="login"><input type="text" class="settings" placeholder="Log in here"/></li>
-        <li><input type="password" class="settings" placeholder="Password"/></li>-->
+        <!-- <li id="login"><input type="text" class="settings" placeholder="Log in here"/></li>
+        <li><input type="password" class="settings" placeholder="Password"/></li> -->
   </ul>
             </div>
-            <input type="search" class="login booksearch" id="city" placeholder="City"/>
-      <input type="search" class="col-sm-6 booksearch" placeholder="Search for books..." autofocus  />
+            <input type="search" class="login booksearch" id="city" placeholder="City..." autofocus ng-model="cityquery"/>
+    <input type="search" class="login booksearch" id="author" placeholder="Author..." ng-model="authorquery"/>
+      <input type="search"  class="col-sm-6 booksearch" placeholder="Title..." ng-model="bookquery"/>
       <a href="#" class="login button">Log in</a>
    </div>
 </div>
@@ -47,12 +46,13 @@
 
         <h3>{{ title }}</h3>
 
-<div ng-repeat="book in books" class="col-md-4 col-sm-6 col-xs-12">
+<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" ng-repeat="book in books | filter:{title:bookquery} | filter:{author:authorquery} | filter:{city:cityquery}" >
   <div class="thumbnail">
     <img ng-src="{{ book.cover }}">
-    <p class="title">{{ book.name }}</p>
-    <p class="date">Puplished: {{ book.pubdate | date }}</p>
-    <p class="date">Available from: {{ book.available | date }}</p>
+    <p class="title">{{ book.title }}</p>
+    <p class="meta">Author: {{ book.author }}</p>
+    <p class="meta">Puplished: {{ book.pubdate | date }}</p>
+    <p class="meta">Available from: {{ book.available | date }}</p>
     <div class="rating">
     <p class="loan">
       Ask for this book
