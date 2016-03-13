@@ -64,6 +64,7 @@ Karma
   -/+ beroende på låntagares omdöme
   +karma/dag = antal sidor * ( 0.25 + ( 0.6 * ln(1+hur länge har boken varit till utlånes) / ((antal användare som lånar ut samma bok i samma stad)^0.6) ) )
   -karma/dag = antal sidor * ( 0.5 + ( 0.6 * ln(1+hur länge har inlämningsdeadline överträtts) / ((antal användare som lånar ut samma bok i samma stad)^0.6) ) )
+
 Databas
   - En HashMap/Dictionary för inlagda städer
   - En HashMap/Dictionary för varje stad
