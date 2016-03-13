@@ -1,5 +1,62 @@
+___ DESIGN ___
+- När en användare är inloggad, ersätt sign-up-knappen med en plus-knapp (lägg till bok-knapp)
+
+___ KOD ___
+
 - Flytta all bokinformation till separat fil
-- Användare
-- Funktion: kunna lägga till bok via sajten
-- Funktion: Kunna låna en bok
 - Spara bokratings till fil och observera ändringar i filen
+- Refaktorisera.
+  - Irrelevanta variabelnamn
+  - Onödiga id
+- Bestäm färgpalett
+
+___ FUNKTIONALITET ___
+
+- Registrering av användare
+- Inloggning
+- Lägga till bok
+- Låna en bok
+
+Följande struktur är förslag. Om du ser effektivare lösningar, vänligen ersätt nuvarande (del)struktur
+med din lösning! :)
+
+___ DATASTRUKTUR ___
+
+Bok
+  - Författare
+  - Titel
+  - Genre / tags
+  - Max lånetid
+  - Bokomslag
+  - Betyg
+  - Stad
+  - Lista på användare som lånar ut boken
+
+Användare
+  - Namn
+  - Lösenord
+  - Telefonnummer
+  - Mail
+  - Stad
+  - Karma
+  - Brottsregister
+
+Användarklasser
+  - Buddha (admin)
+    - Kan ta bort böcker
+    - Kan deaktivera användare (om brottsregistret har fler än 3 brott)
+    - Kan redigera bokinformation
+  - Bodhisattva (power user)
+    - Kan redigera bokinformation
+    - Kan lägga till ett brott i en användares brottsregister
+  - Munk (user)
+
+Brottsregister
+  - Består av en lista med olika brott
+  - Efter att en användare har en lista på över 3 brott notifieras en Buddha
+
+Databas
+  - En HashMap/Dictionary för inlagda städer
+  - En HashMap/Dictionary för varje stad
+    - Boktitel är key
+    - Bok-objekt är value
