@@ -99,15 +99,27 @@ border-top:1px solid #999;
      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+.button:hover {
+  outline:none;
+  text-decoration: none;
+}
 .button:focus {
   outline:none;
+  text-decoration: none;
 }
 .button:active {
+  text-decoration: none;
   outline:none;
   background:hsla(169, 62%, 42%, 1) ;
 }
 
+.button:visited {
+  text-decoration: none;
+  color:#fff;
+}
+
 #frontsearch {
+  height:50px;
     width:100%;
     display:flex;
     justify-content:flex-start;
@@ -117,13 +129,21 @@ border-top:1px solid #999;
   top:0;
 }
 
-#booksearch{
+.booksearch{
   width:100%;
   border:none;
 }
-#booksearch:focus{
+.booksearch:focus{
  outline:none;
 
+}
+
+.login {
+  max-width:70px;
+}
+
+#city {
+  padding-left: 10px;
 }
 
 .main {
@@ -216,8 +236,7 @@ height:300px;
 
 .bad:hover,
 .good:hover, .loan:hover {
- color: #F65A5B ;
-   background: rgba(246, 90, 91, 0.25);
+   background-color: #39D1B4 ;
    transition: background 500ms;
 }
 
