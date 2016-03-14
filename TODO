@@ -3,7 +3,7 @@ ___ DESIGN ___
 
 ___ KOD ___
 
-- Flytta all bokinformation till separat fil
+-[KLAR - dålig lösning] Flytta all bokinformation till separat fil
 - Spara bokratings till fil och observera ändringar i filen
 - Refaktorisera.
   - Irrelevanta variabelnamn
@@ -18,7 +18,8 @@ ___ FUNKTIONALITET ___
 - Lägga till bok
 - Låna en bok
 
-Följande struktur är förslag. Om du ser effektivare lösningar, vänligen ersätt nuvarande (del)struktur
+Följande struktur är förslag.
+Om du ser effektivare lösningar, vänligen ersätt nuvarande (del)struktur
 med din lösning! :)
 
 ___ DATASTRUKTUR ___

@@ -22,7 +22,7 @@ h3 {
   align-items: center;
   width: 100%;
   min-height: 200px;
-  background: #7a7a7a;
+  background: #62937a;
   font-size: 150%;
   color: #fff;
   text-align: center;
@@ -33,19 +33,16 @@ h3 {
   background: rgba(250, 250, 250, 0.9);
   width: 300px;
   font-size: 200%; }
-
-.dropdown-menu p {
-  color: #999;
-  float: left; }
-
-.dropdown-menu li {
-  padding-left: 10px;
-  height: 50px; }
-
-.dropdown-menu #available {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  .dropdown-menu p {
+    color: #999;
+    float: left; }
+  .dropdown-menu li {
+    padding-left: 10px;
+    height: 50px; }
+  .dropdown-menu #available {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .settings {
   width: 100%;
@@ -54,7 +51,7 @@ h3 {
   background: transparent;
   color: #999; }
 
-.settings:focus {
+:focus {
   outline: none; }
 
 .checkbox {
@@ -121,7 +118,7 @@ h3 {
 
 .main h3 {
   margin: 20px;
-  color: #7a7a7a; }
+  color: #62937a; }
 
 .thumbnail {
   border: 0px;
@@ -129,12 +126,11 @@ h3 {
   padding: 50px;
   border-radius: 0;
   margin-bottom: 50px; }
-
-.thumbnail img {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  max-width: 100%;
-  height: 300px; }
+  .thumbnail img {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    max-width: 100%;
+    height: 300px; }
 
 .title,
 .meta {
@@ -173,7 +169,7 @@ h3 {
 
 .bad,
 .good, .loan {
-  background: #7a7a7a;
+  background: #62937a;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -204,7 +200,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #e14747;
+  background: #be3c3c;
   right: 0;
   bottom: 0;
   margin: 20px;
