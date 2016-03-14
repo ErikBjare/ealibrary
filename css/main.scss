@@ -1,0 +1,279 @@
+// Colors
+$red: hsl(0, 72%, 68%);
+$darker-red: hsl(0, 72%, 58%);
+$blue:hsla(169, 62%, 52%, 1);
+$darker-blue:hsla(169, 62%, 42%, 1);
+$bg-gray: #f2f2f2;
+$text: #a3a3a3;
+$box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+//  Fonts
+$std-font:'Roboto', sans-serif;
+$head-font: 'Indie Flower', cursive;
+
+html, body {
+ margin: 0;
+ padding: 0;
+ font-family: $std-font;
+ width:100%;
+}
+
+p, h1, h3 {
+    color:#444;
+    font-family: sans-serif;
+}
+
+h1, h3 {
+    color:#fff;
+    text-shadow: hsl(0, 100%, 53%) 1px 1px;
+}
+
+h1 {
+
+}
+
+h3 {
+    font-size:250%;
+    font-family: $head-font;
+}
+
+.header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    min-height:200px;
+    background:$red;
+    font-size: 150%;
+    color: #fff;
+  text-align:center;
+  padding-top:40px;
+  padding-bottom:10px;
+}
+
+.dropdown-menu {
+  background:hsla(0, 0%, 98%,0.9);
+    width:300px;
+    font-size:200%;
+}
+
+.dropdown-menu p {
+color:#999;
+  float:left;
+}
+
+.dropdown-menu li {
+padding-left:10px;
+height:50px;
+}
+
+.dropdown-menu #available {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings{
+  width:100%;
+  max-width:300px;
+  border:none;
+  background:hsla(0,0%,0%,0);
+  color:#999;
+}
+
+.settings:focus{
+ outline:none;
+
+}
+
+.checkbox {
+  float:right;
+  height:40px;
+  width:21px;
+}
+
+.button {
+  width:100%;
+    height:50px;
+    font-size:100%;
+  display:flex;
+    justify-content:center;
+    align-items:center;
+ background-color: $blue;
+ color: #fff;
+ font-size: 16px;
+   font-weight: 200;
+  border:none;
+     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.button:hover {
+  outline:none;
+  text-decoration: none;
+}
+.button:focus {
+  outline:none;
+  text-decoration: none;
+}
+.button:active {
+  text-decoration: none;
+  outline:none;
+  background:$darker-blue;
+}
+
+.button:visited {
+  text-decoration: none;
+  color:#fff;
+}
+
+#frontsearch {
+  height:50px;
+  width:100%;
+  display:flex;
+  justify-content:flex-start;
+  position:fixed;
+  z-index: 1;
+  opacity: 0.9;
+  top:0;
+}
+
+.booksearch{
+  width:100%;
+  border:none;
+}
+.booksearch:focus{
+  outline:none;
+
+}
+
+.login {
+  max-width:100px;
+}
+
+#city, #author {
+  padding-left: 10px;
+}
+
+.main {
+ background-color: $bg-gray;
+}
+
+.main h3 {
+  margin:20px;
+  color: $red;
+}
+
+.thumbnail {
+ border: 0px;
+ position: relative;
+ padding: 50px;
+   border-radius: 0;
+   margin-bottom:50px;
+}
+
+.thumbnail img {
+   margin-top: 10px;
+ margin-bottom: 30px;
+ max-width: 100%;
+height:300px;
+}
+
+.title,
+.meta {
+ color: #444;
+ margin: 0;
+ font-size: 18px;
+   font-weight: 800;
+}
+
+.meta {
+   color: $text;
+   font-size: 14px;
+   font-weight: 200;
+}
+
+.karma {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: $blue;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5%;
+  box-shadow: $box-shadow;
+  font-weight: 200;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.rating {
+ text-align: right;
+ -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+ margin: 30px 0 -30px 20px;
+}
+
+.bad,
+.good, .loan {
+   background: #F65A5B ;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   font-size: 15px;
+   line-height: 40px;
+   min-width: 40px;
+   height: 40px;
+   border-radius: 5%;
+   margin: 0 -30px 0 40px;
+   text-align: center;
+   font-weight: 200;
+   box-shadow: $box-shadow;
+   transition: background 500ms;
+}
+
+.loan {
+  position:absolute;
+  text-align:center;
+  min-width: 120px;
+  left:-30px;
+}
+
+.bad:hover,
+.good:hover, .loan:hover {
+   background-color:$blue ;
+   transition: background 500ms;
+}
+
+  #registerbutton {
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background:$darker-red;
+    right:0;
+    bottom:0;
+    margin:20px;
+    border-radius:50%;
+    height:80px;
+    width:80px;
+    z-index:1;
+   color: #fff;
+   cursor: pointer;
+   font-size: 15px;
+   box-shadow: $box-shadow;
+   transition: background 500ms;
+    }
+
+
+  #registerbutton:hover {
+   background-color:$blue ;
+   transition: background 500ms;
+  }
+
+.title {
+  height:50px;
+max-height:50px;
+}
