@@ -10,7 +10,7 @@ p, h1, h3 {
 
 h1, h3 {
   color: #fff;
-  text-shadow: #ff0f0f 1px 1px; }
+  text-shadow: #399ed0; }
 
 h3 {
   font-size: 250%;
@@ -22,7 +22,7 @@ h3 {
   align-items: center;
   width: 100%;
   min-height: 200px;
-  background: #e87373;
+  background: #7a7a7a;
   font-size: 150%;
   color: #fff;
   text-align: center;
@@ -69,7 +69,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #39d0b5;
+  background-color: #399ed0;
   color: #fff;
   font-size: 16px;
   font-weight: 200;
@@ -87,7 +87,7 @@ h3 {
 .button:active {
   text-decoration: none;
   outline: none;
-  background: #29ae95; }
+  background: #2981ae; }
 
 .button:visited {
   text-decoration: none;
@@ -121,7 +121,7 @@ h3 {
 
 .main h3 {
   margin: 20px;
-  color: #e87373; }
+  color: #7a7a7a; }
 
 .thumbnail {
   border: 0px;
@@ -152,7 +152,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #39d0b5;
+  background-color: #399ed0;
   color: #fff;
   font-size: 18px;
   border-radius: 5%;
@@ -173,7 +173,7 @@ h3 {
 
 .bad,
 .good, .loan {
-  background: #F65A5B;
+  background: #7a7a7a;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -196,7 +196,7 @@ h3 {
 
 .bad:hover,
 .good:hover, .loan:hover {
-  background-color: #39d0b5;
+  background-color: #399ed0;
   transition: background 500ms; }
 
 #registerbutton {
@@ -219,7 +219,7 @@ h3 {
   transition: background 500ms; }
 
 #registerbutton:hover {
-  background-color: #39d0b5;
+  background-color: #399ed0;
   transition: background 500ms; }
 
 .title {

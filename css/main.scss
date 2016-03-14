@@ -1,11 +1,20 @@
-// Colors
-$red: hsl(0, 72%, 68%);
-$darker-red: hsl(0, 72%, 58%);
-$blue:hsla(169, 62%, 52%, 1);
-$darker-blue:hsla(169, 62%, 42%, 1);
-$bg-gray: #f2f2f2;
+// Prime color
+$base: hsl(0, 0%, 48%);
+$darker-base: hsl(0, 72%, 58%);
+
+// Subprime color
+$details:hsla(200, 62%, 52%, 1);
+$darker-details:hsla(200, 62%, 42%, 1);
+
+// Misc. colors
+$body-bg: #f2f2f2;
+
+// Font colors
 $text: #a3a3a3;
+$textheader: #444;
+$text-shadow:$details;
 $box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
 //  Fonts
 $std-font:'Roboto', sans-serif;
 $head-font: 'Indie Flower', cursive;
@@ -24,7 +33,7 @@ p, h1, h3 {
 
 h1, h3 {
     color:#fff;
-    text-shadow: hsl(0, 100%, 53%) 1px 1px;
+    text-shadow: $text-shadow;
 }
 
 h1 {
@@ -42,7 +51,7 @@ h3 {
     align-items: center;
     width:100%;
     min-height:200px;
-    background:$red;
+    background:$base;
     font-size: 150%;
     color: #fff;
   text-align:center;
@@ -98,12 +107,12 @@ height:50px;
   display:flex;
     justify-content:center;
     align-items:center;
- background-color: $blue;
+ background-color: $details;
  color: #fff;
  font-size: 16px;
    font-weight: 200;
   border:none;
-     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+     box-shadow: $box-shadow;
 }
 
 .button:hover {
@@ -117,7 +126,7 @@ height:50px;
 .button:active {
   text-decoration: none;
   outline:none;
-  background:$darker-blue;
+  background:$darker-details;
 }
 
 .button:visited {
@@ -154,12 +163,12 @@ height:50px;
 }
 
 .main {
- background-color: $bg-gray;
+ background-color: $body-bg;
 }
 
 .main h3 {
   margin:20px;
-  color: $red;
+  color: $base;
 }
 
 .thumbnail {
@@ -179,7 +188,7 @@ height:300px;
 
 .title,
 .meta {
- color: #444;
+ color: $textheader;
  margin: 0;
  font-size: 18px;
    font-weight: 800;
@@ -195,7 +204,7 @@ height:300px;
   display:flex;
   justify-content:center;
   align-items:center;
-  background-color: $blue;
+  background-color: $details;
   color: #fff;
   font-size: 18px;
   border-radius: 5%;
@@ -218,7 +227,7 @@ height:300px;
 
 .bad,
 .good, .loan {
-   background: #F65A5B ;
+   background: $base;
    color: #fff;
    cursor: pointer;
    display: inline-block;
@@ -243,7 +252,7 @@ height:300px;
 
 .bad:hover,
 .good:hover, .loan:hover {
-   background-color:$blue ;
+   background-color:$details ;
    transition: background 500ms;
 }
 
@@ -252,7 +261,7 @@ height:300px;
     display:flex;
     justify-content: center;
     align-items:center;
-    background:$darker-red;
+    background:$darker-base;
     right:0;
     bottom:0;
     margin:20px;
@@ -269,7 +278,7 @@ height:300px;
 
 
   #registerbutton:hover {
-   background-color:$blue ;
+   background-color:$details ;
    transition: background 500ms;
   }
 
